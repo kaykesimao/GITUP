@@ -1,9 +1,13 @@
-const name = "kayke";
-const h1 = document.querySelector("h1");
-let i = 1
+const button = document.querySelector("button");
+button.addEventListener("click", () => pegarValor());
 
-h1.addEventListener("click", () => something())
 
-function something() {
-  console.log(name + i++)
+function pegarValor() {
+    // Seleciona o elemento pelo ID
+    var inputElement = document.getElementById('meuInput');
+    
+    // Acessa a propriedade .value
+    var valor = inputElement.value;
+    
+    console.log(valor);
 }
